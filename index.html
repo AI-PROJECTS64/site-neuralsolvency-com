@@ -86,6 +86,13 @@
       color:#c1ccec;
       font-size:13px
     }
+    .badge-dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:radial-gradient(circle,#4ade80 0,#16a34a 55%,#052e16 100%);
+      box-shadow:0 0 0 6px rgba(34,197,94,.25);
+    }
     .lang{
       gap:10px;
       display:flex;
@@ -97,7 +104,8 @@
       border:1px solid #1d2946;
       padding:7px 12px;
       border-radius:999px;
-      cursor:pointer
+      cursor:pointer;
+      font-size:13px;
     }
     .lang button[aria-pressed="true"]{
       background:var(--accent);
@@ -181,7 +189,10 @@
 <body>
   <div class="wrap">
     <div class="topbar">
-      <div class="badge">Actif numérique disponible à l’acquisition</div>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Actif numérique disponible à l’acquisition</span>
+      </div>
       <div class="lang">
         <button id="btn-fr" aria-pressed="true">FR</button>
         <button id="btn-en" aria-pressed="false">EN</button>
@@ -262,24 +273,24 @@
       </p>
     </section>
 
-    <!-- ================= AUTRES ACTIFS FR ================= -->
+    <!-- ================= AUTRES ACTIFS FR (mention non cliquable) ================= -->
     <section class="card" style="margin-top:16px" data-fr>
       <h3>Actifs associés (même thèse IA & solvency)</h3>
       <p class="muted">
         Selon la stratégie de l’acquéreur, NeuralSolvency.com peut être articulé avec d’autres actifs
         descriptifs du même ensemble pour construire un cadre intégré de risques technologiques
-        et systémiques&nbsp;:
+        et systémiques, par exemple&nbsp;:
       </p>
       <div class="list">
-        <a class="chip" href="https://www.computesolvency.com" target="_blank" rel="noopener">ComputeSolvency.com</a>
-        <a class="chip" href="https://www.modelsovereignty.com" target="_blank" rel="noopener">ModelSovereignty.com</a>
-        <a class="chip" href="https://www.livingprocessor.com" target="_blank" rel="noopener">LivingProcessor.com</a>
-        <a class="chip" href="https://www.bciaccess.com" target="_blank" rel="noopener">BCIaccess.com</a>
-        <a class="chip" href="https://www.neuralaccess.ai" target="_blank" rel="noopener">NeuralAccess.ai</a>
+        <span class="chip">ComputeSolvency.com</span>
+        <span class="chip">ModelSovereignty.com</span>
+        <span class="chip">LivingProcessor.com</span>
+        <span class="chip">BCIaccess.com</span>
+        <span class="chip">NeuralAccess.ai</span>
       </div>
       <p class="muted">
-        Ces liens sont fournis à titre indicatif pour illustrer l’écosystème possible.
-        Seul le nom de domaine <b>NeuralSolvency.com</b> est proposé à l’acquisition sur ce site.
+        Ces exemples sont fournis à titre illustratif. Sur ce site, seul le nom de domaine
+        <b>NeuralSolvency.com</b> est proposé à l’acquisition.
       </p>
     </section>
 
@@ -300,8 +311,8 @@
     <section class="card" style="margin-top:16px" data-fr>
       <h3>Documents / Briefs</h3>
       <p class="muted">
-        Brief d’acquisition détaillé NeuralSolvency.com (2025-11) disponible en français et en anglais
-        pour les équipes Tech, IA, Risques, Finance, ESG & Juridique.
+        Brief d’acquisition détaillé NeuralSolvency.com (2025-11) disponible en français
+        (et en anglais via la section EN) pour les équipes Tech, IA, Risques, Finance, ESG &amp; Juridique.
       </p>
       <div class="cta">
         <a class="btn" href="/Acquisition%20Brief%20Neuralsolvency-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
@@ -309,12 +320,6 @@
         </a>
         <a class="btn primary" href="/Acquisition%20Brief%20Neuralsolvency-202511.pdf" download="Acquisition-Brief-NeuralSolvency-FR-202511.pdf" type="application/pdf">
           📥 Télécharger (FR, PDF)
-        </a>
-        <a class="btn" href="/Acquisition%20Brief%20Neuralsolvency-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
-          👁️ Open Brief (EN)
-        </a>
-        <a class="btn primary" href="/Acquisition%20Brief%20Neuralsolvency-EN-202511.pdf" download="Acquisition-Brief-NeuralSolvency-EN-202511.pdf" type="application/pdf">
-          📥 Download (EN, PDF)
         </a>
       </div>
     </section>
@@ -392,23 +397,23 @@
       </p>
     </section>
 
-    <!-- ================= AUTRES ACTIFS EN ================= -->
+    <!-- ================= RELATED ASSETS EN (non-clickable mention) ================= -->
     <section class="card" style="margin-top:16px" data-en hidden>
       <h3>Related assets (same AI & solvency thesis)</h3>
       <p class="muted">
         Depending on the buyer’s strategy, NeuralSolvency.com can be combined with other
         descriptive assets from the same family to build an integrated view of
-        technology and systemic risk:
+        technology and systemic risk, for example:
       </p>
       <div class="list">
-        <a class="chip" href="https://www.computesolvency.com" target="_blank" rel="noopener">ComputeSolvency.com</a>
-        <a class="chip" href="https://www.modelsovereignty.com" target="_blank" rel="noopener">ModelSovereignty.com</a>
-        <a class="chip" href="https://www.livingprocessor.com" target="_blank" rel="noopener">LivingProcessor.com</a>
-        <a class="chip" href="https://www.bciaccess.com" target="_blank" rel="noopener">BCIaccess.com</a>
-        <a class="chip" href="https://www.neuralaccess.ai" target="_blank" rel="noopener">NeuralAccess.ai</a>
+        <span class="chip">ComputeSolvency.com</span>
+        <span class="chip">ModelSovereignty.com</span>
+        <span class="chip">LivingProcessor.com</span>
+        <span class="chip">BCIaccess.com</span>
+        <span class="chip">NeuralAccess.ai</span>
       </div>
       <p class="muted">
-        Links are provided for illustration only. This site offers for sale
+        These examples are illustrative only. This site offers for sale
         the <b>NeuralSolvency.com</b> domain name exclusively.
       </p>
     </section>
@@ -430,8 +435,8 @@
     <section class="card" style="margin-top:16px" data-en hidden>
       <h3>Documents / Briefs</h3>
       <p class="muted">
-        Detailed NeuralSolvency.com acquisition brief (2025-11) available in English and French
-        for Tech, AI, Risk, Finance, ESG & Legal teams.
+        Detailed NeuralSolvency.com acquisition brief (2025-11) available in English
+        (and in French via the FR section) for Tech, AI, Risk, Finance, ESG & Legal teams.
       </p>
       <div class="cta">
         <a class="btn" href="/Acquisition%20Brief%20Neuralsolvency-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
@@ -439,12 +444,6 @@
         </a>
         <a class="btn primary" href="/Acquisition%20Brief%20Neuralsolvency-EN-202511.pdf" download="Acquisition-Brief-NeuralSolvency-EN-202511.pdf" type="application/pdf">
           📥 Download (EN, PDF)
-        </a>
-        <a class="btn" href="/Acquisition%20Brief%20Neuralsolvency-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
-          👁️ Ouvrir le Brief (FR)
-        </a>
-        <a class="btn primary" href="/Acquisition%20Brief%20Neuralsolvency-202511.pdf" download="Acquisition-Brief-NeuralSolvency-FR-202511.pdf" type="application/pdf">
-          📥 Télécharger (FR, PDF)
         </a>
       </div>
     </section>
@@ -460,16 +459,24 @@
   <script>
     const frBtn = document.getElementById('btn-fr');
     const enBtn = document.getElementById('btn-en');
-    const show = (lang) => {
+
+    function show(lang){
       document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
       document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
       frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
       enBtn.setAttribute('aria-pressed', String(lang === 'en'));
       document.documentElement.lang = lang;
-    };
+    }
+
     frBtn.addEventListener('click', () => show('fr'));
     enBtn.addEventListener('click', () => show('en'));
-    show('fr');
+
+    // Détection initiale : FR si navigateur en fr-*, sinon EN
+    (function initLang(){
+      const navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      const defaultLang = navLang.startsWith('fr') ? 'fr' : 'en';
+      show(defaultLang);
+    })();
   </script>
 </body>
 </html>
